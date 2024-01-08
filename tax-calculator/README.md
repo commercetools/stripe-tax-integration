@@ -1,5 +1,5 @@
 # Tax Calculator
-This module provides an application based on [commercetools Connect](https://docs.commercetools.com/connect), which will be triggered by the [extension](https://docs.commercetools.com/tutorials/extensions) from commercetools project once there is a cart created/updated. The corresponding cart details are then synchronized to the external tax provider to calculate tax amount.
+This module provides an application based on [commercetools Connect](https://docs.commercetools.com/connect), which will be triggered by the [extension](https://docs.commercetools.com/tutorials/extensions) from commercetools project once there is a cart updated. The corresponding cart details are then synchronized to the stripe tax provider to calculate tax amount.
 
 The module also provides scripts for post-deployment and pre-undeployment action. After deployment via connect service completed, [commercetools Extension](https://docs.commercetools.com/tutorials/extensions) is created by post-deployment script which listen to any cart create/update action in commercetools Project. Once cart has been created/updated, the commercetools Extension triggers an API of tax calculator module to handle the corresponding changes.
 
